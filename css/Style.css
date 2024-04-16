@@ -1,0 +1,44 @@
+﻿
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.nav navbar-nav li
+{
+    margin-left:20px;
+}
+
+fieldset
+{
+    padding:5px;
+    margin:5px;
+}
+
+@media only screen and (max-width:400px)
+{
+    .header{
+        font-size: 15px;
+    }
+}
+
+.rc-anchor-center-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.inquiry-form-main .title span {
+    display: inline;
+    background: #e8dfdf;
+    padding: 10px;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}

@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Content/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--<script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('.menu').click(function ()
+            {
+                $('navbar-tab').toggleClass('active');
+            })
+        })
+    </script>-->
+</head>
+<body>
+   
+    <div class="container">
+    <div class="header">
+       <span id="n">N</span>EPAL &nbsp; TRAVEL&nbsp; AND &nbsp;TOURISM
+      </div>
+    </div>
+    
+  
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Menu and toggle get grouped for better mobile display-->
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                 data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+          </div>
+
+            <!--Collecting nav links,forms and other content for toggling-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li role="presentation"><a href="Default.aspx">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true" aria-expanded="false">
+                Destination<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Pokhara</a></li>
+                    <li><a href="#">Chitwan</a></li>
+                    <li><a href="#">Illam</a></li>
+                </ul>
+            </li>
+            <li role="presentation"><a href="#">Tours</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+               role="button" aria-haspopup="true" aria-expanded="false">
+                Activities<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Trekking</a></li>
+                    <li><a href="#">Cannoying</a></li>
+                    <li><a href="#">Rafting</a></li>
+                    <li><a href="#">Bunjee Jumping</a></li>
+                    <li><a href="#">Paragliding</a></li>
+                    <li><a href="#">Sighting</a></li>
+                </ul>
+            </li>
+            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="BookNow.aspx">Book now</a></li>
+
+        </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar"></div>
+    
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+   <!-- <div class="footer">
+        &copy;Copyright 2015  all  rights  reserved  by
+       <a href="site.html" target="_blank">www.travelandtourism.info</a>
+
+    </div>-->
+</body>
+</html>
